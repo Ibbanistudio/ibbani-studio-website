@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IBBANI STUDIO | Digital Media</title>
+<meta name="description" content="IBBANI STUDIO - Explore travel, nature, culture, technology and inspiring stories.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#101211;color:#f5f2e9;font-family:Arial,sans-serif;line-height:1.7}
+header{padding:22px 8%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #333}
+.logo{font-size:23px;font-weight:900;letter-spacing:3px}
+.logo small{display:block;color:#d8b879;font-size:10px;letter-spacing:5px}
+nav a{color:white;text-decoration:none;margin-left:22px;font-size:14px}
+nav a:hover{color:#d8b879}
+.hero{min-height:570px;padding:100px 10%;display:flex;align-items:center;background:linear-gradient(110deg,#101211 35%,#26352c)}
+.hero h1{font-size:clamp(45px,8vw,85px);line-height:1.05}
+.hero h1 span{color:#d8b879}
+.hero p{color:#c4c9c4;margin-top:22px;max-width:550px;font-size:17px}
+.btn{display:inline-block;background:#d8b879;color:#171717;padding:13px 25px;text-decoration:none;font-weight:bold;margin-top:28px;border-radius:3px}
+section{padding:75px 9%}
+.tag{color:#d8b879;text-transform:uppercase;letter-spacing:3px;font-size:12px}
+h2{font-size:38px;margin:12px 0 30px}
+.intro{text-align:center;max-width:850px;margin:auto;color:#c5cbc5}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:35px}
+.card{background:#1c2420;border:1px solid #343b35;padding:30px;min-height:205px}
+.card h3{color:#d8b879;font-size:22px;margin:25px 0 10px}
+.card p{color:#c2c9c2;font-size:14px}
+.about{background:#171c19}
+.about p{max-width:850px;color:#c5cbc5}
+.youtube{background:#252b26;text-align:center}
+.contact{text-align:center;background:#1b211d}
+.contact a{color:#d8b879}
+footer{text-align:center;padding:25px;color:#aaa;border-top:1px solid #333;font-size:13px}
+@media(max-width:700px){
+ header{display:block;text-align:center}
+ nav{margin-top:18px}
+ nav a{margin:0 8px;font-size:12px}
+ .hero{padding:75px 8%;min-height:450px}
+ .cards{grid-template-columns:1fr}
+ h2{font-size:30px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">IBBANI STUDIO<small>DIGITAL MEDIA</small></div>
+<nav>
+<a href="#home">Home</a>
+<a href="#explore">Explore</a>
+<a href="#about">About</a>
+<a href="#videos">Videos</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<main>
+<div class="hero" id="home">
+<div>
+<div class="tag">Stories • Places • People • Ideas</div>
+<h1>See the world.<br><span>Feel the story.</span></h1>
+<p>Welcome to IBBANI STUDIO. Discover inspiring places, fascinating stories, local culture, technology, travel and the world around us.</p>
+<a class="btn" href="#videos">EXPLORE OUR VIDEOS</a>
+</div>
+</div>
+
+<section id="explore">
+<div class="intro">
+<div class="tag">Discover with us</div>
+<h2>Explore Beyond the Ordinary</h2>
+<p>We bring different experiences and interesting stories together through creative digital media and video production.</p>
+</div>
+<div class="cards">
+<div class="card"><div class="tag">01 / Travel</div><h3>Travel & Nature</h3><p>Discover beautiful destinations, nature, journeys and memorable experiences.</p></div>
+<div class="card"><div class="tag">02 / Culture</div><h3>People & Events</h3><p>Explore local communities, traditions, festivals and special events.</p></div>
+<div class="card"><div class="tag">03 / Knowledge</div><h3>News & Technology</h3><p>Interesting stories, technology, science and informative documentaries.</p></div>
+</div>
+</section>
+
+<section class="about" id="about">
+<div class="tag">Who we are</div>
+<h2>About IBBANI STUDIO</h2>
+<p>IBBANI STUDIO is an independent Kannada-first digital media channel. Our passion is exploring the world, capturing real experiences and sharing informative and entertaining stories. From travel and culture to technology and documentaries, we aim to bring something interesting to every viewer.</p>
+</section>
+
+<section class="youtube" id="videos">
+<div class="tag">Watch our stories</div>
+<h2>IBBANI STUDIO on YouTube</h2>
+<p>Watch our latest videos, travel experiences and special coverage.</p>
+<a class="btn" href="https://www.youtube.com/" target="_blank" rel="noopener">VISIT YOUTUBE</a>
+</section>
+
+<section class="contact" id="contact">
+<div class="tag">Let's connect</div>
+<h2>Have a story to share?</h2>
+<p>For collaborations, enquiries and suggestions:</p>
+<p><a href="mailto:ibbanistudio@gmail.com">ibbanistudio@gmail.com</a></p>
+</section>
+</main>
+
+<footer>
+<p>© <span id="year"></span> IBBANI STUDIO | DIGITAL MEDIA</p>
+<p>Stories worth discovering.</p>
+</footer>
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
